@@ -11,7 +11,7 @@ orders = db["orders"]
 app = Flask(__name__)
 
 
-@app.route('/main', methods=['get', 'post'])
+@app.route('/main', methods=['GET', 'POST'])
 def main():
     text = request.form.get("Body")
     number = request.form.get("From")
